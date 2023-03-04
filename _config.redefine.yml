@@ -19,7 +19,7 @@ style:
   avatar: /images/redefine-avatar.svg # avatar of the author
 
   # Favicon (You can use local image or image external link)
-  favicon: /images/redefine-logo.svg # favicon of the site
+  favicon: /images/common/blog-logo.svg # favicon of the site
 
   # Article image align position
   article_img_align: center # value: left | center
@@ -45,12 +45,12 @@ style:
   first_screen:
     enable: true
     background_image:
-      light: https://evan.beee.top/img/wallhaven-wqery6-light.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
-      dark: https://evan.beee.top/img/wallhaven-wqery6-dark.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      light: /images/home/home-banner-light-1.webp
+      dark: /images/home/home-banner-dark.webp 
     title_color:
-      light: "#fff" # first screen title color (light mode)
+      light: "#323739" # first screen title color (light mode)
       dark: "#d1d1b6" # first screen title color (dark mode)
-    description: Theme Redefine # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
+    description: 時雨的前端隨筆<br/>一個前端的小小天地 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
     custom_font: # custom font for the first screen
       enable: false
       font_family: # the font family name of the url below
@@ -67,13 +67,11 @@ style:
 # Social contact link
 # ---------------------------------------------------------------------------------------
 social_contact: # social contact icons in the first screen, you can add more by using fontawesome icon names
-  enable: false 
+  enable: true
   links:
-    github:  # your GitHub URL
-    instagram: # your Instagram URL
-    zhihu:  # your ZhiHu URL
-    twitter:  # your twitter URL
-    email:  # your email
+    github: https://github.com/jjustin-35 # your GitHub URL
+    linkedin: https://www.linkedin.com/in/jjustin-chen
+    email: jjusttin11@gmail.com # your email
     # ...... # you can add more
 
 # ---------------------------------------------------------------------------------------
@@ -83,16 +81,16 @@ menu: #you can customize, i18n files are in the theme's languages folder. fa-reg
   Home: 
     path: / 
     icon: fa-regular fa-house # can be empty
-  # Archives: 
-  #   path: /archives 
-  #   icon: fa-regular fa-archive # can be empty
-  # Status: 
-  #   path: https://status.evanluo.top/
-  #   icon: fa-regular fa-chart-bar
+  Article: 
+    path: /article 
+    icon: fa-regular fa-file-lines
+    submenus: 
+      前端筆記: /categories/frontend
+      生活隨筆: /categories/life
   About: 
     icon: fa-regular fa-user
     path: /about
-  # Links: 
+  # Article: 
   #   icon: fa-regular fa-link
   #   submenus:
   #     Link1: /link1
