@@ -15,7 +15,7 @@ tags:
 ## store 
 store 是儲存 reducer 的資料儲存庫，之前建立的 reducer 都會存放在這裡。
 要創建一個 store ，可以使用 redux 提供的 `createStore`: 
-```
+```javascript
 const store = createStore(rootreducer);
 ```
 > 現在 redux 會建議使用 redux toolkit 的 configureStore 替代 createStore，configureStore 基本上是 createStore 的加強版。
@@ -24,7 +24,7 @@ store 提供幾種方法可以使用：`getState()`、`subscribe()` 以及 `disp
 - `getState()` 可以取得 state 的值。
 - `subscribe()` 可以傳入一個 callback function 監聽 state 的改變，並作相對應的處理，`subscribe()` 會回傳一個 unsubscribe 的 function 在監聽完成後取消監聽。
 - `dispatch()` 則可以 dispatch action 進入 store。
-```
+```javascript
 import store from './store';
 import actions from './actionCreator';
 
@@ -46,7 +46,7 @@ unsubscribe();
 
 ## Provider
 要使用 useSelector 之前，需要先用 Provider 將要取用 store 的 components 包裹住，相當於 react 中 context 的 Provider。
-```
+```javascript
 <Provider store={store}>
     <App/>
 </Provider>
@@ -55,14 +55,14 @@ unsubscribe();
 ## useSelector
 `useSelector`是 react redux 提供的 hook ，可以輕易地取得 store 中的 state。
 要使用 useSelector ，需要傳入一個 callback function，用以取得 state：
-```
+```javascript
 const todolist = useSelector(state => state.todolist);
 ```
 與 store.getState() 不同，useSelector 是一個 hook ，因此當 state 改變時，可以觸發 re-render。
 
 ## useDispatch
 `useDispatch`是用來 dispatch action 的方法，使用方法很簡單，只要使用 useDispatch，來取出 dispatch ，放入 action 即可。
-```
+```javascript
 const dispatch = useDispatch();
 
 dispatch(someActionCreator(payload));

@@ -38,7 +38,7 @@ const action = {
 
 ### Action type
 要使用 action ，我們可以先定義上述的 action type:
-```
+```javascript
 export const ADD_TODO = 'ADD_TODO';
 ```
 這樣在取用 action 時，就只需要引入 action type 的檔案，方便使用 action type，也方便管理 action type。
