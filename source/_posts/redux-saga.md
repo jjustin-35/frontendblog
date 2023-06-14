@@ -8,7 +8,6 @@ tags:
 - JavaScript
 ---
 
-## 簡介
 Redux Saga 是一個專門處理 Side Effect 的 Middleware，尤其是在處理非同步的讀取（如串接 API），可以幫助我們更好的使用非同步的功能。
 
 ## 基本概念

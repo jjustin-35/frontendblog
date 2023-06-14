@@ -10,7 +10,7 @@ tags:
 
 ![](https://i.imgur.com/hFGODme.gif)
 
-前一篇以經介紹了 action、reducer 了，這一篇繼續介紹 store 、 dispatch 以及 selector。
+前一篇已經介紹了 action、reducer 了，這一篇繼續介紹 store 、 dispatch 以及 selector。
 
 ## store 
 store 是儲存 reducer 的資料儲存庫，之前建立的 reducer 都會存放在這裡。
