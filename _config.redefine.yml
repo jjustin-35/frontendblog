@@ -4,7 +4,13 @@
 base_info:
   title: 時雨的前端隨筆 # Site title
   author: 時雨 Justin # Author name
-  url: https://redefine.ohevan.com # Site url
+  url: https://frontendnote.site # Site url
+  keywords: # Site keywords
+    - 時雨
+    - 前端
+    - react
+    - javascript
+    - next.js
   # Logo image (You can use local image, image external link or don’t fill)
   logo_img: /images/common/blog-logo.svg
 
@@ -196,7 +202,7 @@ comment:
   # See: https://waline.js.org/guide/get-started.html
   waline:
     serverUrl:  # Waline server url(vercel) example: https://example.example.com
-    lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
+    lang: zh-TW # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
   
   # Gitalk
   # See: https://github.com/gitalk/gitalk
@@ -250,7 +256,7 @@ pjax:
 # ---------------------------------------------------------------------------------------
 recommended_article: # 文章推荐，需要 npm install nodejieba
   enable: false
-  title: 推荐阅读
+  title: 推薦閱讀
   icon: fa-solid fa-bookmark
   max_count: 3
   placeholder_img: https://evan.beee.top/img/wallhaven-wqery6-light.webp
