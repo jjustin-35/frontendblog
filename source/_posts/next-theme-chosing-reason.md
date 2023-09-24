@@ -1,6 +1,6 @@
 ---
 layout: page.md
-title: Nextjs 13 簡介 & 選擇題目理由
+title: [next 13] - Nextjs 13 簡介 & 選擇題目理由
 date: 2023-09-18 22:32:19
 categories:
 - frontend

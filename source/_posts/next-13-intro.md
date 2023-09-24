@@ -1,6 +1,6 @@
 ---
 layout: post.md
-title: Next 13.4 - 全新版本的 Next
+title: [next 13] - Next 13.4 - 全新版本的 Next
 date: 2023-09-20 23:07:08
 categories:
 - frontend
