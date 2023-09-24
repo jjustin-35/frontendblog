@@ -1,5 +1,5 @@
 ---
-title: [next 13] - components render 機制
+title: next 13 - components render 機制
 catagories:
   - frontend
 tags:

@@ -1,6 +1,6 @@
 ---
 layout: page.md
-title: [next 13] -  Next 是什麼？
+title: next 13 -  Next 是什麼？
 date: 2023-09-20 23:03:12
 categories:
 - frontend

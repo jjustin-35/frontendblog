@@ -1,6 +1,6 @@
 ---
 layout: ironmen.md
-title: [next 13] - App Router 概念
+title: next 13 - App Router 概念
 date: 2023-09-20 23:52:57
 categories:
 - frontend

@@ -1,6 +1,6 @@
 ---
 layout: ironmen.md
-title: [next 13] - Next 環境建置及技術選型
+title: next 13 - Next 環境建置及技術選型
 date: 2023-09-20 23:12:57
 categories:
 - frontend

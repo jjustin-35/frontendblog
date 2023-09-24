@@ -1,5 +1,5 @@
 ---
-title: [next 13] - Data Fetch
+title: next 13 - Data Fetch
 catagories:
   - frontend
 tags:

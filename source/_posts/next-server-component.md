@@ -1,5 +1,5 @@
 ---
-title: [next 13] - server component
+title: next 13 - server component
 catagories:
   - frontend
 tags:

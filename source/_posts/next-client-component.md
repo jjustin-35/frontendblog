@@ -1,6 +1,6 @@
 ---
 layout: ironmen.md
-title: [next 13] - Client Component
+title: next 13 - Client Component
 date: 2023-09-24 23:51:48
 catagories:
 - frontend
