@@ -12,6 +12,7 @@ info:
 defaults:
   favicon: /images/common/blog-logo.svg
   logo: /images/common/blog-logo.svg
+  avatar: /images/common/avatar.png
 
 colors:
   #Primary color
