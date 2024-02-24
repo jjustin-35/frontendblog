@@ -109,3 +109,9 @@ sitemap:
   template:
   rel:
   limit: 1000
+
+# hexo-admin authentification
+admin:
+  username: jjustin
+  password_hash: $2a$10$RG1jyxrFxgoKFaVFMfGDZeWSZ3GJO3QKV1DQX2vMIMdKYuA0az2wS
+  secret: a very cool secret of shigure
