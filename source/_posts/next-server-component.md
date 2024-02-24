@@ -1,5 +1,4 @@
----
-title: next 13 - server component
+title: next.js 13 - server component
 catagories:
   - frontend
 tags:

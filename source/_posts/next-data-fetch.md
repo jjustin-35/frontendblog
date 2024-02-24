@@ -1,5 +1,4 @@
----
-title: next 13 - Data Fetch
+title: next.js 13 - Data Fetch 策略
 catagories:
   - frontend
 tags:

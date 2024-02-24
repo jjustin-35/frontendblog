@@ -1,16 +1,15 @@
----
-title: 'Redux - 基本: Actions & Reducer'
-date: 2023-02-14 00:30:51
+title: 'Redux 基本教學: Redux Actions 和 Reducer'
 categories:
-- frontend
-tags: 
-- Redux
-- JavaScript
+  - frontend
+tags:
+  - Redux
+  - JavaScript
+date: 2023-02-14 00:30:00
 ---
-
 Redux 是一個資料（狀態）管理套件，他是參考 meta 公司提出的 Flux 架構實作而出的。
 
 ## Flux
+
 Flux 是一種設計方式，為了控制狀態與 view 的資料流不會過於繁雜，因而設計了一套將資料與 view 分離的模式，即是 Flux 。
 ![](https://i.imgur.com/KLtRG6B.png)
 當有 action 觸發，需要改變資料或畫面時，會讓 dispatcher 分派指令給 store（資料），在進而改變 view ( 畫面 )，如果又觸發什麼指令，仍然需要經過 dispatcher 派發指令，呈現**單一資料流**。
@@ -59,6 +58,7 @@ const addTodo = (text) => {
 在專案中有時候會有 XXX_SUC、XXX_FAL 的 type，主要是為了描述諸如串接 API 時是否成功或著是失敗。
 
 ## Reducer
+
 Reducer 是 state 處理的地方，他就像是 `Array.reduce()` 中會放入的 function，會根據指定的 action 將 state 加工成下一個 state 並回傳。
 ```javascript
 import * as actions from 'actionType.js';

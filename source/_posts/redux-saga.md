@@ -1,11 +1,10 @@
----
-title: Redux Saga
-date: 2023-04-09 00:34:58
+title: Redux Saga 是什麼？異步處理方案 Redux Saga 教學
 categories:
-- frontend
-tags: 
-- Redux
-- JavaScript
+  - frontend
+tags:
+  - Redux
+  - JavaScript
+date: 2023-04-09 00:34:58
 ---
 
 Redux Saga 是一個專門處理 Side Effect 的 Middleware，尤其是在處理非同步的讀取（如串接 API），可以幫助我們更好的使用非同步的功能。
