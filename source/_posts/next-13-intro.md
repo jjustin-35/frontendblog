@@ -1,6 +1,9 @@
 ---
 layout: post.md
 title: next 13 - Next 13.4 - 全新版本的 Next
+description: Next 在今年升版到 13.4，並增加了許多新的功能，同時也大幅翻轉了原先的寫法。
+總的來說，新版本的 Next 將 data fetch 的層級拉低到 component，並增加了 component 的彈性，相較過去 (page router) 的寫法有了更多活用的可能性。
+接著讓我們來認識一下升版後的 Next 吧！
 date: 2023-09-20 23:07:08
 categories:
 - frontend
@@ -14,6 +17,8 @@ tags:
 Next 在今年升版到 13.4，並增加了許多新的功能，同時也大幅翻轉了原先的寫法。
 總的來說，新版本的 Next 將 data fetch 的層級拉低到 component，並增加了 component 的彈性，相較過去 (page router) 的寫法有了更多活用的可能性。
 接著讓我們來認識一下升版後的 Next 吧！
+
+<!--more-->
 
 ## 有哪些不同？
 ### App Route
