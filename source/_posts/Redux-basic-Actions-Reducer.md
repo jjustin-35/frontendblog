@@ -1,3 +1,4 @@
+---
 title: 'Redux 基本教學: Redux Actions 和 Reducer'
 categories:
   - frontend

@@ -1,3 +1,4 @@
+---
 title: next.js 13 - Data Fetch 策略
 catagories:
   - frontend

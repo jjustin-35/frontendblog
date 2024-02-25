@@ -1,3 +1,4 @@
+---
 title: next.js 13 - server component
 catagories:
   - frontend
