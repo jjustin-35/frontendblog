@@ -16,7 +16,7 @@ tags:
 ## 什麼是 unit test
 unit test (單元測試) 是指對程式碼的最小單位做測試，可能是一個 feature ，也可能是一個 function。
 
-unit test 與 intergration test (整合測試) 相對。unit test 針對軟體中每個基礎功能、單位的程式碼和邏輯做測試，不會管到程式的其他地方，其他功能不在 unit test 的範圍內。
+unit test 與 integration test (整合測試) 相對。unit test 針對軟體中每個基礎功能、單位的程式碼和邏輯做測試，不會管到程式的其他地方，其他功能不在 unit test 的範圍內。
 
 相對的，integration test 就是整個功能的測試。以表單為例，表單是否可以填寫、填寫後有無正確檢查內容、送出功能是否正常等。這些一連串的行為都是 integration test 的測試對象。
 
