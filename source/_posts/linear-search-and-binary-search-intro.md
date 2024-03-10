@@ -56,5 +56,5 @@ tags:
 ### Big O notation:
 - best: `O(1)`
 - worst: `O(logn)`
-    - 每次尋找都會將 array 切半尋找，若 length = 8，則過程為 `8 -> 4 -> 2 -> 1`，歷經 3 步，也就是 $log_2 8 = 3$ ，因此可以類推演算法所需步數為 $log_2 n$ ，O natation 為 `O(logn)`
+    - 每次尋找都會將 array 切半尋找，若 length = 8，則過程為 `8 -> 4 -> 2 -> 1`，歷經 3 步，也就是 $ log_2 8 = 3 $ ，因此可以類推演算法所需步數為 $ log_2 n $ ，O natation 為 `O(logn)`
 - average: `O(logn)`
