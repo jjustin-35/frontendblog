@@ -152,3 +152,4 @@ comment:
   config:
     waline:
       serverUrl: 'comment.frontendnote.site'
+      lang: 'zh-TW'
