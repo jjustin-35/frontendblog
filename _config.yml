@@ -151,5 +151,5 @@ markdown:
 comment:
   config:
     waline:
-      serverUrl: 'comment.frontendnote.site'
+      serverUrl: 'https://comment.frontendnote.site'
       lang: 'zh-TW'
