@@ -42,7 +42,7 @@ Chrome 的 [chromium source](https://source.chromium.org/chromium/chromium/src/+
 可以看到，網速越快所需的距離閾值越小，也就是可以在更接近 viewport 的地方載入資源。
 
 我們可以透過 DevTools 的 Network 來測試，web.dev 提供了一個 [demo](https://lazy-load.netlify.app/iframes/) 可以玩玩看，可以看到 youtube 的 iframe 在 scroll 接近時開始載入，到我們滑到時便可以直接使用。
-{%youtube YMbXR40qLrk %}
+{% youtube YMbXR40qLrk %}
 
 ## 結論
 lazy loading 很好用，提升網站效能，但可能會需要注意 distance from viewport，如果距離 viewport 太近（例如就在 banner 下面) ，一樣會在剛開始時就被載入，可能就沒什麼效果！
