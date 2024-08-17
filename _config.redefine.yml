@@ -59,3 +59,8 @@ navbar:
       path: /about
       icon: fa-regular fa-user
 
+comment:
+  config:
+    waline:
+      serverUrl: 'https://comment.frontendnote.site'
+      lang: 'zh-TW'
