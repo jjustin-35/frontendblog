@@ -1,4 +1,3 @@
-# www vs non-www 的區別
 ---
 title: www 網址 vs 非 www 網址的區別
 categories:
