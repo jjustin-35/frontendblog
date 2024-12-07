@@ -27,9 +27,9 @@ const updateDate = (content, filePath) => {
             const updatedContent = `---\n${updatedYamlContent}\n---\n${bodyContent}`;
             fs.writeFileSync(filePath, updatedContent, 'utf8');
             console.log(`Updated date for: ${filePath}`);
-        } else {
-            console.log(`No YAML front matter found in: ${filePath}`);
         }
+    } else {
+        console.log(`No YAML front matter found in: ${filePath}`);
     }
 }
 
