@@ -4,7 +4,8 @@ import { glob } from 'glob';
 import yaml from 'js-yaml';
 
 const getCurrentTime = () => {
-    const date = new Date();
+    const timezoneOffset = (new Date()).getTimezoneOffset() * 60000;
+    const date = new Date(Date.now() - timezoneOffset);
     return date.toISOString();
 }
 
@@ -23,14 +24,16 @@ const updateMdFile = () => {
             const bodyContent = content.slice(yamlMatch[0].length);
 
             const yamlData = yaml.load(yamlContent);
-            yamlData.date = getCurrentTime();
+            if (!yamlData.date) {
+                yamlData.date = getCurrentTime();
+            }
 
             const updatedYamlContent = yaml.dump(yamlData);
             const updatedContent = `---\n${updatedYamlContent}\n---\n${bodyContent}`;
             fs.writeFileSync(filePath, updatedContent, 'utf8');
             console.log(`Updated date for: ${file}`);
         } else {
-            console.error(`No YAML front matter found in: ${file}`);
+            console.log(`No YAML front matter found in: ${file}`);
         }
     });
 }
