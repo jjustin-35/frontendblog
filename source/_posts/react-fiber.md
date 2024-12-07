@@ -11,7 +11,7 @@ date: '2024-12-08T02:29:57.984Z'
 ---
 
 
-[TOC]
+
 
 自 React v16 起，React 進行了一次重大重構，採用了 Fiber 架構，不僅顯著提升效能，還為實現 React 18 中的 Concurrent Mode 奠定基礎。那麼，究竟什麼是 Fiber？
 

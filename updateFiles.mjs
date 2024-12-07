@@ -10,7 +10,8 @@ const getCurrentTime = () => {
 }
 
 const removeString = (content, str) => {
-    return content.replace(str, '');
+    const newContent = content.replace(str, '');
+    return newContent;
 }
 
 const updateDate = (content, filePath) => {
@@ -25,12 +26,11 @@ const updateDate = (content, filePath) => {
 
             const updatedYamlContent = yaml.dump(yamlData);
             const updatedContent = `---\n${updatedYamlContent}\n---\n${bodyContent}`;
-            fs.writeFileSync(filePath, updatedContent, 'utf8');
             console.log(`Updated date for: ${filePath}`);
+            return updatedContent;
         }
-    } else {
-        console.log(`No YAML front matter found in: ${filePath}`);
     }
+    return content;
 }
 
 const updateMdFile = () => {
@@ -41,8 +41,10 @@ const updateMdFile = () => {
     files.forEach((file) => {
         const filePath = path.join('./source/_posts', file);
         const content = fs.readFileSync(filePath, 'utf8');
-        removeString(content, '[TOC]');
-        updateDate(content, filePath);
+
+        const newContent = removeString(content, '[TOC]');
+        const updatedContent = updateDate(newContent, filePath);
+        fs.writeFileSync(filePath, updatedContent, 'utf8');
     });
 
     console.log('Files update done!');
