@@ -1,17 +1,14 @@
 ---
 title: React 底層機制：React Fiber 是什麼？
 categories:
-  - frontend
-  - React
-tags:
-  - JavaScript
-  - React
-date: '2024-12-08T02:29:57.984Z'
-
+- frontend
+- React
+tags: 
+- JavaScript
+- React
 ---
 
-
-
+[TOC]
 
 自 React v16 起，React 進行了一次重大重構，採用了 Fiber 架構，不僅顯著提升效能，還為實現 React 18 中的 Concurrent Mode 奠定基礎。那麼，究竟什麼是 Fiber？
 
@@ -31,7 +28,7 @@ Fiber 是纖維的意思，象徵此新架構的核心理念：將進程拆分�
 
 
 在這樣的架構下，若網頁龐大且複雜，瀏覽器的 main thread 便會因為忙著處理、渲染元件，被一個個任務阻塞卡住，導致網頁卡頓，影響使用者體驗。
-![image](https://hackmd.io/_uploads/SklpSdP-Jg.png)
+![image](https://blog.koba04.com/images/posts/a-state-of-react-fiber/ReactDOM.png)
 [<p style="font-size: 12px">React Fiber現状確認</p>
 ](https://blog.koba04.com/post/2017/04/25/a-state-of-react-fiber)
 如上，React 從呼叫 `root.render(<App />)` 開始，不斷向下找元件，讓 main thread 塞滿任務。
@@ -51,7 +48,7 @@ Fiber 有幾個核心功能：
 [<p style="font-size: 12px">圖片來源</p>](https://s3.amazonaws.com/media-p.slid.es/uploads/1103863/images/9133579/react-fiber.gif)
 
 從效能上看，也可以看到任務不會被積在 call stack 中從而阻塞：
-![image](https://hackmd.io/_uploads/rJMv-6Zmyg.png)
+![image](https://blog.koba04.com/images/posts/a-state-of-react-fiber/ReactDOMFiber.png)
 [<p style="font-size: 12px">React Fiber現状確認</p>
 ](https://blog.koba04.com/post/2017/04/25/a-state-of-react-fiber)
 
@@ -108,7 +105,7 @@ Fiber linked list 有幾個特點：
 - children 只會連結第一個 child，其他 children 會以第一個 child 的 sibling 連結。
 
 畫出來會像這樣：
-![1_mv0XXCAC9wYztIzdzx8J5Q](https://hackmd.io/_uploads/By9Vkkczke.png)
+![1_mv0XXCAC9wYztIzdzx8J5Q](https://miro.medium.com/v2/resize:fit:1100/format:webp/1*mv0XXCAC9wYztIzdzx8J5Q.png)
 
 至於 React 是如何遍歷這個 Linked list 的呢？主要 follow 以下兩個原則：
 1. DFS（深度優先搜尋）
@@ -123,7 +120,7 @@ Fiber linked list 有幾個特點：
 5. A `complete` 後，指向 sibling 繼續執行。
 
 可以參考下圖：
-![1_TUZjD2-e26gPQtsIaneHRQ](https://hackmd.io/_uploads/SybBF1cGJe.gif)
+![1_TUZjD2-e26gPQtsIaneHRQ](https://miro.medium.com/v2/resize:fit:828/format:webp/1*TUZjD2-e26gPQtsIaneHRQ.gif)
 
 React 的程式碼長這樣：
 ```typescript=
