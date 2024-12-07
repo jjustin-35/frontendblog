@@ -7,7 +7,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server -d"
+    "server": "hexo server -d",
+    "prepare": "husky"
   },
   "hexo": {
     "version": "7.0.0-rc2"
@@ -29,5 +30,8 @@
     "hexo-theme-redefine": "^2.6.1",
     "js-yaml": "^4.1.0",
     "katex": "^0.16.9"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }

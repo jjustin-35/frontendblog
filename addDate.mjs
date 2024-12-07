@@ -26,16 +26,18 @@ const updateMdFile = () => {
             const yamlData = yaml.load(yamlContent);
             if (!yamlData.date) {
                 yamlData.date = getCurrentTime();
-            }
 
-            const updatedYamlContent = yaml.dump(yamlData);
-            const updatedContent = `---\n${updatedYamlContent}\n---\n${bodyContent}`;
-            fs.writeFileSync(filePath, updatedContent, 'utf8');
-            console.log(`Updated date for: ${file}`);
+                const updatedYamlContent = yaml.dump(yamlData);
+                const updatedContent = `---\n${updatedYamlContent}\n---\n${bodyContent}`;
+                fs.writeFileSync(filePath, updatedContent, 'utf8');
+                console.log(`Updated date for: ${file}`);
+            }
         } else {
             console.log(`No YAML front matter found in: ${file}`);
         }
     });
+
+    console.log('Date update done!');
 }
 
 updateMdFile();
