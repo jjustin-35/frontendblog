@@ -1,14 +1,17 @@
 ---
 title: React 底層機制：React Fiber 是什麼？
 categories:
-- frontend
-- React
-tags: 
-- JavaScript
-- React
+  - frontend
+  - React
+tags:
+  - JavaScript
+  - React
+date: '2024-12-08T03:25:44.630Z'
+
 ---
 
-[TOC]
+
+
 
 自 React v16 起，React 進行了一次重大重構，採用了 Fiber 架構，不僅顯著提升效能，還為實現 React 18 中的 Concurrent Mode 奠定基礎。那麼，究竟什麼是 Fiber？
 
@@ -23,7 +26,7 @@ Fiber 是纖維的意思，象徵此新架構的核心理念：將進程拆分�
 ## Fiber 是為了解決什麼問題？
 ### React v15 的問題
 舊版 React 在 **reconciliation** 過程中（生成新的 virtual DOM 並與舊的 virtual DOM 比對差異），採用的是 **Stack Reconciler** 的方式。這種方法使用遞迴（recursive）遍歷所有元件並比對每個節點。然而，這樣的實現有一個關鍵問題：**無法中途暫停**。一旦開始遍歷，就必須完成整個過程才能停止。
-> This process is **recursive**. App may render to a <Greeting />, Greeting may render to a <Button />, and so on. The reconciler will “drill down” through user-defined components recursively as it learns what each component renders to.
+> This process is **recursive**. App may render to a `<Greeting />`, Greeting may render to a `<Button />`, and so on. The reconciler will “drill down” through user-defined components recursively as it learns what each component renders to.
 > *[Implementation Notes](https://legacy.reactjs.org/docs/implementation-notes.html) -- Legacy Reactjs*
 
 
