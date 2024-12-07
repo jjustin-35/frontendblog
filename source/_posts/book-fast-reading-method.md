@@ -5,6 +5,7 @@ categories:
 tags: 
 - book
 - reading
+date: 2024-12-01 15:05:00
 ---
 
 ![reading-fast-method-banner](https://i.imgur.com/bNKHf9a.jpg)

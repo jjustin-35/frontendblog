@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@renbaoshuo/markdown-it-katex": "^2.0.2",
+    "glob": "^11.0.0",
     "hexo": "^7.0.0-rc2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -25,6 +26,7 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-redefine": "^2.6.1",
+    "js-yaml": "^4.1.0",
     "katex": "^0.16.9"
   }
 }
