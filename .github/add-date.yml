@@ -28,7 +28,7 @@ jobs:
 
       # 執行腳本，添加 `date` 到 Markdown 文件
       - name: Add date to Markdown files
-        run: node addDate.js
+        run: node addDate.mjs
 
       # 提交更改
       - name: Commit changes
