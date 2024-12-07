@@ -1,1 +1,1 @@
-node addDate.mjs && git add .
+node updateFiles.mjs && git add .

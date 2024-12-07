@@ -1,12 +1,15 @@
 ---
 title: React 底層機制：React Fiber 是什麼？
 categories:
-- frontend
-- React
-tags: 
-- JavaScript
-- React
+  - frontend
+  - React
+tags:
+  - JavaScript
+  - React
+date: '2024-12-08T02:29:57.984Z'
+
 ---
+
 
 [TOC]
 
