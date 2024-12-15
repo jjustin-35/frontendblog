@@ -6,16 +6,14 @@ categories:
 tags: 
 - JavaScript
 - React
-date: 2024-12-09 22:30:00
+date: 2024-12-15 14:30:00
 ---
-
-[TOC]
 
 自 React v16 起，React 進行了一次重大重構，採用了 Fiber 架構，不僅顯著提升效能，還為實現 React 18 中的 Concurrent Mode 奠定基礎。那麼，究竟什麼是 Fiber？
 
-<!-- more -->
-
 本文基於閱讀[React 開發者一定要知道的底層機制 — React Fiber Reconciler](https://medium.com/starbugs/react-%E9%96%8B%E7%99%BC%E8%80%85%E4%B8%80%E5%AE%9A%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%BA%95%E5%B1%A4%E6%9E%B6%E6%A7%8B-react-fiber-c3ccd3b047a1)後的筆記，整理重點並適當補充解釋。若有興趣，可以參考莫力全的原文！
+
+<!-- more -->
 
 ## React Fiber 是什麼？
 React Fiber 是 React 在 v16 後重構的架構，透過 React Fiber 能夠提升 React 的效能，並實現 Hooks 和 concurrent mode 的功能。
