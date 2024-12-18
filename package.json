@@ -28,7 +28,7 @@
     "hexo-theme-landscape": "^0.0.3",
     "hexo-theme-redefine": "^2.6.1",
     "js-yaml": "^4.1.0",
-    "katex": "^0.16.9"
+    "katex": "^0.16.18"
   },
   "devDependencies": {
     "husky": "^9.1.7"
